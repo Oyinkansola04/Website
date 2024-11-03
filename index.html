@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
@@ -21,13 +22,20 @@
         <img src="image/konga.webp" alt="">
         <p>Store <br>Locator</p>
         <p>Sell on <br>Konga</p>
-        <div>
+        <div class="header_search">
             <input type="text" placeholder="Search for products, brands and categories...">
-            <button class="search">?</button>
+            <button>
+                <i class='bx bx-search'></i>
+            </button>
         </div>
-        <p><span>?</span> Help</p>
-        <p>Login/ <br>Signup</p>
+        <div>
+            <p><span>?</span> Help <i class='bx bx-chevron-down'></i></p>
+        </div>
+        <div>
+            <p>Login/ <br>Signup</p>
+        </div>
         <div class="cart">
+            <i class='bx bx-cart' ></i>
             <p>My <br>Cart</p>
             <div class="zero">0</div>
         </div>
@@ -66,22 +74,22 @@
 
     <div class="icons">
         <div>
-            <p>Konga Blog</p>
+            <img src="image/blog.jpg_r1YjM-9Mi.webp" alt="">
         </div>
         <div>
-            <p>Pay Bills</p>
+            <img src="image/bills.jpg_rJtsf-cfo.webp" alt="">
         </div>
         <div>
-            <p>Offline Store</p>
+            <img src="image/store.jpg_rJYifZqGi.webp" alt="">
         </div>
         <div>
-            <p>Brand Stores</p>
+            <img src="image/Brand.jpg_B1qiGW5Gj.webp" alt="">
         </div>
         <div>
-            <p>Book Flights</p>
+            <img src="image/Brand copy.jpg_HJqizbcfj.webp" alt="">
         </div>
         <div>
-            <p>Watch KongaTv</p>
+            <img src="image/Watch.jpg_rkrwll-Np.webp" alt="">
         </div>
     </div>
 
@@ -377,7 +385,10 @@
             <div class="shayo_info">
                 <h2>HOME FURNISHINGS</h2>
                 <p>Get Up To 70% Off</p>
-                <a href="#">SHOP NOW</a>
+                <div class="shayo_shop">
+                    <a href="#">SHOP NOW </a>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
             </div>
         </div>
         <div class="shayo_section">
@@ -385,7 +396,10 @@
             <div class="shayo_info">
                 <h2>FITNESS TOOLS & EQUIPMENT</h2>
                 <p class="pt">Get Fitness Equipment At Amazing Discounts!</p>
-                <a href="#">SHOP NOW</a>
+                <div class="shayo_shop">
+                    <a href="#">SHOP NOW </a>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
             </div>
         </div>
         <div class="shayo_section">
@@ -393,7 +407,10 @@
             <div class="shayo_info">
                 <h2>KIDS WEARS & ACCESSORIES</h2>
                 <p class="pt">Get All Kiddies Products At Huge Discounts!</p>
-                <a href="#">SHOP NOW</a>
+                <div class="shayo_shop">
+                    <a href="#">SHOP NOW </a>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
             </div>
         </div>
         <div class="shayo_section">
@@ -401,7 +418,10 @@
             <div class="shayo_info">
                 <h2>TOP DEALS ON TELEVISIONS</h2>
                 <p>Get the Tv You Want With Bargain Deals</p>
-                <a href="#">SHOP NOW</a>
+                <div class="shayo_shop">
+                    <a href="#">SHOP NOW </a>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
             </div>
         </div>
     </div>
@@ -423,21 +443,27 @@
 <!--FOOTER-->
 <div class="footer">
     <div class="info">
-        <div class="icon"></div>
+        <div class="icon">
+            <i class='bx bxs-envelope'></i>
+        </div>
         <div>
             <h4>EMAIL SUPPORT</h4>
             <a>help@konga.com</a>
         </div>
     </div>
     <div class="info">
-        <div class="icon"></div>
+        <div class="icon">
+            <i class='bx bxs-phone' ></i>
+        </div>
         <div>
             <h4>PHONE SUPPORT</h4>
             <a>07080635700, 02018883435</a>
         </div>
     </div>
     <div class="info">
-        <div class="icon"></div>
+        <div class="icon">
+            <i class='bx bxl-whatsapp' ></i>
+        </div>
         <div>
             <h4>WHATSAPP</h4>
             <a>0907 0038 400, 0809 460 5555</a>
@@ -496,14 +522,18 @@
         <div class="write-up">
             <div class="icon">
                 <div class="box">
-                    <div class="ab">AB</div>
+                    <div class="ab">
+                        <i class='bx bxl-apple' ></i>
+                    </div>
                     <div>
                         <p>Download on</p>
                         <h3>App Store</h3>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="ab">AB</div>
+                    <div class="ab">
+                        <i class='bx bxl-android' ></i>
+                    </div>
                     <div>
                         <p>Download on</p>
                         <h3>Google Play</h3>
@@ -514,11 +544,19 @@
                 <h4>
                     <b>CONNECT WITH US</b>
                 </h4>
-                <div>
-
+                <div class="write_icon">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-youtube'></i>
                 </div>
             </div>
         </div>
+    </div>
+    <div style="display: flex;align-items: center;justify-content: space-between; margin: 60px 0px 15px;">
+        <hr style="display: inline-block;width: 485px; border: 2px solid #7d7c7c33;">
+        <div style="display: inline-block; font-size: 13px;color: #9b9b9b;">Copyright © 2024 Konga.com. All rights reserved</div>
+        <hr style="display: inline-block;width: 485px;border: 2px solid #7d7c7c33;">
     </div>
 </div>
 </body>

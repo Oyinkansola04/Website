@@ -42,23 +42,47 @@ img{
     line-height: 20px;
 }
 
-.header input{
+.header .header_search{
+    position: relative;
     width: 500px;
+}
+
+.header_search button{
+    position: absolute;
+    bottom: 0px;
+    right: -30px;
+    background-color: #fba100;
+    color: #fff;
+    font-weight: 600;
+    padding: 13px 13px 7px;
+    font-size: 13px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.header input{
+    width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .header span{
     background-color: #fd4dab;
     padding: 2px 5px;
     font-size: 17px;
+    font-weight: 600;
     border-radius: 50%;
+}
+
+.bx.bx-chevron-down{
+    font-size: 17px;
 }
 
 .header .cart{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #33B27B;
     width: 130px;
@@ -66,10 +90,17 @@ img{
     border-radius: 3px;
 }
 
+.cart i{
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .cart .zero{
     background-color: #fff;
     color: #000;
     padding: 5px 7px;
+    margin-left: 30px;
+    font-weight: 600;
     border-radius: 3px;
     font-size: 12px;
 }
@@ -117,6 +148,7 @@ img{
 
 .ad{
     width: 74%;
+    cursor: pointer;
 }
 
 .ad img{
@@ -137,26 +169,32 @@ img{
     margin-left: 5px;
     margin-bottom: 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .icons{
-    padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding: 0px 20px;
 }
 
 .icons div{
-    padding: 15px 55px;
+    padding: 12px 20px;
     background-color: #fff;
     font-size: 15px;
     border-radius: 4px;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .05);
+    cursor: pointer;
+}
+
+.icons div img{
+    width: 140px;
 }
 
 .item1{
-    margin: 40px 20px;
+    margin: 30px 20px;
     border-radius: 6px;
     background-color: #fff;
 }
@@ -277,6 +315,7 @@ img{
     padding: 10px;
     width: 230px;
     height: 465px;
+    cursor: pointer;
 }
 
 .perfume_prod .prod:hover{
@@ -352,6 +391,7 @@ img{
     border-radius: 3px;
     margin-top: 8px;
     transition:  0.5s;
+    cursor: pointer;
 }
 
 .perfume_prod button:hover{
@@ -413,6 +453,7 @@ img{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
 }
 .rush_hour .rush_img img{
     width: 49.5%;
@@ -441,6 +482,7 @@ img{
     height: 360px;
     border-radius: 7px;
     transition: 0.8s;
+    cursor: pointer;
 }
 
 .shayo_section:hover{
@@ -478,10 +520,22 @@ img{
     margin-bottom: 14px;
 }
 
+.shayo_info .shayo_shop{
+    display: flex;
+    align-items: center;
+}
+
 .shayo_info a{
     text-decoration: none;
     font-size: 13px;
-    color: #8b05ad;
+    color: #8b054d;
+    font-weight: 600;
+}
+
+.shayo_info i{
+    transform: rotate(-90deg);
+    font-size: 20px;
+    color: #8b054d;
 }
 
 .shopping{
@@ -530,11 +584,15 @@ img{
 }
 
 .footer .info .icon{
-    width: 30px;
-    height: 30px;
-    background-color: #b5b5b5;
-    margin-right: 10px;
+    padding: 7px;
+    margin-right: 8px;
     border-radius: 50%;
+    background-color: white;
+}
+
+.footer .info .icon i{
+    font-size: 18px;
+    color: #000;
 }
 
 .footer .info h4{
@@ -563,7 +621,10 @@ img{
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #94004f;
+    background-color: #ed017f;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
 }
 
 .konga{
@@ -610,6 +671,7 @@ img{
     background-color: #000;
     padding: 10px 35px 5px 10px;
     margin-bottom: 25px;
+    cursor: pointer;
  }
 
  .write-up .icon .box p{
@@ -622,9 +684,49 @@ img{
  }
 
  .write-up .box .ab{
-    margin-right: 10px;
+    margin-right: 5px;
+ }
+
+ .box .ab i{
+    font-size: 45px;
+    color: #fff;
  }
 
  .write-up .write h4{
     font-size: 16px;
+    margin-bottom: 5px;
+ }
+
+ .write-up .write h4:hover{
+    text-shadow: none;
+ }
+
+ .write .write_icon i{
+    cursor: pointer;
+    padding: 7px;
+    background-color: #333;
+    margin-right: 7px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+ }
+
+ .write_icon .bx.bxl-facebook:hover{
+    background-color: #fff;
+    color:dodgerblue;
+ }
+
+ .write_icon .bx.bxl-twitter:hover{
+    background-color: #fff;
+    color:#000;
+ }
+
+ .write_icon .bx.bxl-instagram:hover{
+    background-color: #fff;
+    color:#94004f;
+ }
+ 
+ .write_icon .bx.bxl-youtube:hover{
+    background-color: #fff;
+    color: red;
  }
